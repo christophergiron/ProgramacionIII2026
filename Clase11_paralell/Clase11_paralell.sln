@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase11_paralell", "Clase11_paralell\Clase11_paralell.csproj", "{155F6A83-E3C9-4B22-B5FF-65E0E49645FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{155F6A83-E3C9-4B22-B5FF-65E0E49645FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{155F6A83-E3C9-4B22-B5FF-65E0E49645FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{155F6A83-E3C9-4B22-B5FF-65E0E49645FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{155F6A83-E3C9-4B22-B5FF-65E0E49645FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

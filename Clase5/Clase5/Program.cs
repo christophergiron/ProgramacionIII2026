@@ -22,3 +22,11 @@ Console.WriteLine("\nPostOrden");
 tree.postOrden(tree.root);
 Console.WriteLine("\nInOrden");
 tree.inOrden(tree.root);
+
+
+Dictionary<string, string> dict = new Dictionary<string, string>
+{
+    ["Marco"] = "Profesor"
+};
+
+Console.WriteLine(dict["Marco"]);

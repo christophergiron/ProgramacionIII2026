@@ -1,0 +1,23 @@
+@Clase10_HostAddress = http://localhost:5186
+
+GET {{Clase10_HostAddress}}/api/products
+Accept: application/json
+
+### 
+GET {{Clase10_HostAddress}}/api/products/2
+Accept: application/json
+
+### Not Found
+GET {{Clase10_HostAddress}}/api/products/3
+Accept: application/json
+
+### Save
+POST {{Clase10_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "id": "3",
+  "name": "Otro",
+  "description": "Otra",
+  "price": 30.00
+}
