@@ -1,6 +1,5 @@
 namespace Clase10.Domain;
 
-
 public class Product
 {
     public string Id { get; set; }

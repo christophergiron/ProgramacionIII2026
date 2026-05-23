@@ -21,3 +21,11 @@ Content-Type: application/json
   "description": "Otra",
   "price": 30.00
 }
+### Change Name
+PUT {{Clase10_HostAddress}}/api/products/change_name
+Content-Type: application/json
+
+{
+  "id": "3",
+  "name": "Frijoles la chula"
+}

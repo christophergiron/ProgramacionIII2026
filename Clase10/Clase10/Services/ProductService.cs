@@ -3,7 +3,7 @@ using Clase10.Infrastructure;
 
 namespace Clase10.Services;
 
-public class ProductService
+public class ProductService : IProductService
 {
     private IProductRepository _repository;
     
@@ -33,6 +33,29 @@ public class ProductService
             return null;
         }
         return new Product(dto.Id, dto.Name, dto.Description, dto.Price, dto.Stock);
+    }
+
+    public async Task ChangeName(string id, string newName)
+    {
+        var dto = await _repository.Get(id);
+        var record = new SaveProductDto
+        {
+            Id = id,
+            Name = newName,
+            Price = dto.Price,
+            Description = dto.Description
+        };
+        await _repository.Save(record);
+    }
+
+    public Task ChangePrice(string id, decimal newPrice)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task CreateDiscount(string id, decimal discountAmount)
+    {
+        throw new NotImplementedException();
     }
 
     public Task Save(Product product)

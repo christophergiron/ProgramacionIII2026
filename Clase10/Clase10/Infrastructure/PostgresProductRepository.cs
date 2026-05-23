@@ -1,5 +1,4 @@
 ﻿using Dapper;
-using global::Clase10.Infrastructure;
 using Npgsql;
 
 namespace Clase10.Infrastructure;
@@ -16,7 +15,6 @@ public class PostgresProductRepository : IProductRepository
     public async Task<List<ProductDto>> GetAll()
     {
         using var connection = new NpgsqlConnection(_connectionString);
-
         var sql = @"
             SELECT
                 id,
@@ -35,7 +33,6 @@ public class PostgresProductRepository : IProductRepository
     public async Task<ProductDto> Get(string id)
     {
         using var connection = new NpgsqlConnection(_connectionString);
-
         var sql = @"
             SELECT
                 id,
@@ -43,7 +40,7 @@ public class PostgresProductRepository : IProductRepository
                 description,
                 price
             FROM products
-            WHERE id = @Id;
+            WHERE id = @Id; 
         ";
 
         return await connection.QueryFirstOrDefaultAsync<ProductDto>(sql, new

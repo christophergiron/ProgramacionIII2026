@@ -1,5 +1,6 @@
 using Clase10.API.Endpoints;
 using Clase10.Infrastructure;
+using Clase10.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 
 builder.Services.AddScoped<IProductRepository, PostgresProductRepository>();
+builder.Services.AddScoped<IProductService, ProductService>();
 
 var app = builder.Build();
 
