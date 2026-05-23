@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
-builder.Services.AddSingleton<IProductRepository, MemoryProductRepository>();
+builder.Services.AddScoped<IProductRepository, PostgresProductRepository>();
 
 var app = builder.Build();
 
