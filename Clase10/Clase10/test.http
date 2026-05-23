@@ -1,0 +1,8 @@
+﻿### Crear producto
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+  "name": "Laptop",
+  "price": 1500
+}

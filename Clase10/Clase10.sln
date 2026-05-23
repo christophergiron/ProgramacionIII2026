@@ -1,8 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.6.11806.211 stable
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase10", "Clase10\Clase10.csproj", "{A3A0F008-0DF4-4F2A-88CB-B2B899B7E7EB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clase10.Tests", "Clase10.Tests\Clase10.Tests.csproj", "{B8ED64A6-F010-4A7B-A250-F99B274EF45E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{7A57336E-8DE3-4093-9C37-ECD20F2F3EDA}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile.txt = Dockerfile.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +26,11 @@ Global
 		{B8ED64A6-F010-4A7B-A250-F99B274EF45E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8ED64A6-F010-4A7B-A250-F99B274EF45E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8ED64A6-F010-4A7B-A250-F99B274EF45E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDA48E7B-39B0-4AE0-A526-1DC69422B542}
 	EndGlobalSection
 EndGlobal
